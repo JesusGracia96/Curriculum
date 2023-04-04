@@ -1,0 +1,141 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(48, 56, 70, .98);
+    display: flex;
+    flex-direction: row;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+}
+
+.foto img {
+    width: 100%;
+}
+
+.header-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4em;
+}
+
+.nombre {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    line-height: 1em;
+}
+
+.titulo {
+    color: rgb(150, 150, 150);
+}
+
+.contacto {
+    display: flex;
+    color: rgb(150, 150, 150);
+    margin-top: 2em;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.telefono {
+    margin-left: 2em;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.left-side {
+    width: 70%;
+    padding-right: 2em;
+}
+
+.perfil {
+    padding-bottom: 2em;
+    border-bottom: 1px solid lightgray;
+}
+
+.right-side {
+    width: 30%;
+    padding-left: 2em;
+    border-left: 1px solid lightgray;
+}
+
+.bbottom {
+    padding-bottom: 2em;
+    border-bottom: 1px solid lightgray;
+}
+
+.header-elem-formacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.titulo-obtenido {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.elem-formacion {
+    margin-bottom: 2em;
+}
+
+span {
+    font-weight: 600;
+}
+
+.ul-competencias {
+    list-style: none;
+}
+
+.cuadrito {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.cuadrito::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: -20px;
+    background-color: rgba(48, 56, 70, .98);
+}
+
+.linea-abajo {
+    padding-bottom: 1em;
+    position: relative;
+}
+
+.linea-abajo::before {
+    content: "Nivel Avanzado";
+    position: absolute;
+    background-color: rgba(48, 56, 70, .98);
+    width: 90%;
+    height: 2px;
+    bottom: 5px;
+    font-size: 12px;
+}
