@@ -131,7 +131,7 @@ span {
 }
 
 .linea-abajo::before {
-    content: "Nivel Avanzado";
+    content: "Advanced";
     position: absolute;
     background-color: rgba(48, 56, 70, .98);
     width: 90%;
