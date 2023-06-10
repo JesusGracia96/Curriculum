@@ -45,16 +45,16 @@
     <script>
         let quotes = [
             "Te amo cien veces",
-            // "Eres increible",
-            // "Me encanta estar contigo",
-            // "Eres bellísima",
-            // "Eres buenísima",
-            // "Amo ser parte de tu vida",
-            // "Estoy orgulloso de ti",
-            // "Me encantas",
-            // "Me la pones como pan de Soriana",
-            // "Tu puedes!!",
-            // "Eres un solecito, y no el de mediodía",
+            "Eres increible",
+            "Me encanta estar contigo",
+            "Eres bellísima",
+            "Eres buenísima",
+            "Amo ser parte de tu vida",
+            "Estoy orgulloso de ti",
+            "Me encantas",
+            "Me la pones como pan de Soriana",
+            "Tu puedes!!",
+            "Eres un solecito, y no el de mediodía",
         ]
 
         let quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -67,8 +67,8 @@
                 let teAmoContainer = document.createElement("p")
                 teAmoContainer.innerHTML = 'Te amo <i class="fa fa-heart" style="color: red;"></i>';
 
-                let x = Math.floor(Math.random() * window.innerWidth);
-                let y = Math.floor(Math.random() * window.innerHeight);
+                let x = Math.floor(Math.random() * window.innerWidth) - 10;
+                let y = Math.floor(Math.random() * window.innerHeight) - 10;
 
                 teAmoContainer.style.position = "absolute";
                 teAmoContainer.style.left = x + "px";
