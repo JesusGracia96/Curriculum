@@ -12,8 +12,10 @@
     <style>
         html,
         body {
-            width: 100vw;
-            height: 100vh;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
         }
 
         body {
@@ -29,12 +31,55 @@
         p {
             font-size: 24px;
         }
+
+        .teAmoContainer {
+            position: absolute;
+        }
     </style>
 </head>
 
 <body>
-    <h1>TE AMOOOOO <i class="fa fa-heart"></i></h1>
-    <p>Eres una persona increible, me encanta que seas parte de mi vida.</p>
+    <h1>TE AMOOOOO <i class="fa fa-heart" style="color: red;"></i></h1>
+    <p id="quote"></p>
+
+    <script>
+        let quotes = [
+            "Te amo cien veces",
+            // "Eres increible",
+            // "Me encanta estar contigo",
+            // "Eres bellísima",
+            // "Eres buenísima",
+            // "Amo ser parte de tu vida",
+            // "Estoy orgulloso de ti",
+            // "Me encantas",
+            // "Me la pones como pan de Soriana",
+            // "Tu puedes!!",
+            // "Eres un solecito, y no el de mediodía",
+        ]
+
+        let quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+        let quoteContainer = document.getElementById("quote");
+        quoteContainer.textContent = quote;
+
+        if (quote == "Te amo cien veces") {
+            setInterval(function () {
+                let teAmoContainer = document.createElement("p")
+                teAmoContainer.innerHTML = 'Te amo <i class="fa fa-heart" style="color: red;"></i>';
+
+                let x = Math.floor(Math.random() * window.innerWidth);
+                let y = Math.floor(Math.random() * window.innerHeight);
+
+                teAmoContainer.style.position = "absolute";
+                teAmoContainer.style.left = x + "px";
+                teAmoContainer.style.top = y + "px";
+
+                let body = document.querySelector("body");
+                body.appendChild(teAmoContainer);
+            }, 500)
+
+        }
+    </script>
 </body>
 
 </html>
