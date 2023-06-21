@@ -1,0 +1,152 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    max-height: 100%;
+    display: flex;
+}
+
+section {
+    background-color: #e5e5e5;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.p-3 {
+    padding: 1em;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly !important;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.text-white {
+    color: #a8a8a8;
+}
+
+.bbottom {
+    border-bottom: 1px solid rgba(53,0,118,0.86);
+}
+
+header {
+    background-color: rgba(4,21,75,0.86);
+    height: fit-content;
+}
+
+.foto {
+    max-height: 400px;
+    flex: 1;
+}
+
+.foto img {
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.header-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.nombre {
+    font-size: 26px;
+}
+
+.titulo {
+    font-size: 22px;
+}
+
+.contacto {
+    width: 50%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.skill {
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+.skill i {
+    font-size: 20px;
+}
+
+.skill1 {
+    background-color: rgba(255,168,47,0.86);
+}
+
+.skill2 {
+    background-color: rgba(178,255,97,0.86);
+}
+
+.skill3 {
+    background-color: rgba(96,255,156,0.86)
+}
+
+.skill4 {
+    background-color: rgba(76,155,255,0.86)
+}
+
+.experiencia {
+    text-align: left;
+}
+
+.titulo-experiencia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.puesto {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.herramientas-experiencia {
+    font-weight: bold;
+}
